@@ -24,5 +24,44 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
+        private void MainWindow_OnMouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.LeftButton == MouseButtonState.Pressed)
+            {
+                DragMove();
+            }
+        }
+
+        private void open_windowuser(object sender, RoutedEventArgs e)
+        {
+
+            Window1 firstwindow = new Window1();
+            firstwindow.Show();
+            this.Close();
+        }
+
+        private void open_windowadmin(object sender, RoutedEventArgs e)
+        {
+            Window2 window2 = new Window2();
+            window2.Show();
+            this.Close();
+
+        }
+        //public partial class Window1 : Window
+        //{
+        //    public Window1()
+        //    {
+        //       InitializeComponent();
+        //    }
+
+        //}
+        //public partial class Window2 : Window
+        //{
+        //    public Window2()
+        //    {
+        //        InitializeComponent();
+        //    }
+        //}
+
     }
 }
