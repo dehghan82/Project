@@ -5,8 +5,56 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="380"
+        AllowsTransparency="True" Background="Transparent"
+        WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" 
+        MouseDown="MainWindow_OnMouseDown">
+  
+
     <Grid>
-        
+        <Grid>
+            
+            <Grid.RowDefinitions>
+                <RowDefinition>
+                    
+
+                </RowDefinition>
+                <RowDefinition>
+
+                </RowDefinition>
+            </Grid.RowDefinitions>
+
+           
+
+            <Border CornerRadius="10" Grid.RowSpan="2">
+                <Border.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#7be9f6" Offset="0.0"/>
+                        <GradientStop Color="#f083da" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+            </Border>
+
+
+
+            <StackPanel Grid.Row="0" VerticalAlignment="Center">
+                <Image Source="white-removebg-preview.png" Width="150"/>
+                <TextBlock Text="ketabkhan"
+                           FontWeight="Light"
+                           FontFamily="Century Gothic"
+                           FontSize="23"
+                           Foreground="White"
+                           HorizontalAlignment="Center"/>
+
+
+
+            </StackPanel>
+            
+            <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,50,0,0" >
+
+                <Button  Click="open_windowuser" Width="100" Height="40" Content="User" Margin="60,0,60,0"/>
+                <Button  Click="open_windowadmin" Width="100" Height="40" Content="Admin"/>
+            </StackPanel>
+        </Grid>
     </Grid>
 </Window>
