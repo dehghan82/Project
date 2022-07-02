@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
         Title="Window2" Height="450" Width="380" AllowsTransparency="True" Background="Transparent"
-        WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" >
+        WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" MouseDown="MainWindow_OnMouseDown">
 
     <Grid>
         <Grid>

@@ -43,6 +43,8 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -61,11 +63,39 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="admin.cs" />
+    <Compile Include="core\RelayCommand.cs" />
+    <Compile Include="core\observableobject.cs" />
+    <Compile Include="mvvm\viewmodel\HomeViewModel.cs" />
+    <Compile Include="mvvm\viewmodel\MainViewModel.cs" />
+    <Compile Include="mvvm\viewmodel\Profileviewmodel.cs" />
+    <Compile Include="mvvm\view\HomeView.xaml.cs">
+      <DependentUpon>HomeView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="mvvm\view\profileviewer.xaml.cs">
+      <DependentUpon>profileviewer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="user.cs" />
+    <Compile Include="userdashboard.xaml.cs">
+      <DependentUpon>userdashboard.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Window1.xaml.cs">
       <DependentUpon>Window1.xaml</DependentUpon>
     </Compile>
     <Compile Include="Window2.xaml.cs">
       <DependentUpon>Window2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window3.xaml.cs">
+      <DependentUpon>Window3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window4.xaml.cs">
+      <DependentUpon>Window4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window5.xaml.cs">
+      <DependentUpon>Window5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window6.xaml.cs">
+      <DependentUpon>Window6.xaml</DependentUpon>
     </Compile>
     <Page Include="buttontheme.xaml">
       <SubType>Designer</SubType>
@@ -83,11 +113,47 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="mvvm\view\HomeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="mvvm\view\profileviewer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="theme\MenuButtonTheme.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="theme\TextboxTheme.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="userdashboard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Window1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Window2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window6.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -142,6 +208,17 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="password1-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="white_name-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="phone1-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="fonts\" />
+    <Folder Include="images\" />
+    <Folder Include="mvvm\model\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

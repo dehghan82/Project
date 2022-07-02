@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Window1" Height="450" Width="380" AllowsTransparency="True" Background="Transparent"
         WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" 
-       >
+       MouseDown="MainWindow_OnMouseDown">
 
     <Grid>
         <Grid>
@@ -85,6 +85,7 @@
 
                 </StackPanel>
                 <Border Width="250" Height="2" Background="White" Opacity="0.5"/>
+                <Button Click="enter" Width="100" Height="40" Content="Enter" Margin="60,20,60,0"/>
             </StackPanel>
 
 

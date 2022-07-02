@@ -23,5 +23,20 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
+
+        private void MainWindow_OnMouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.LeftButton == MouseButtonState.Pressed)
+            {
+                DragMove();
+            }
+        }
+
+        private void enter(object sender, RoutedEventArgs e)
+        {
+            userdashboard userdashboard = new userdashboard();
+            userdashboard.Show();
+            this.Close();
+        }
     }
 }
