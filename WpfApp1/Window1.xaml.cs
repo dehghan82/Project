@@ -19,8 +19,11 @@ namespace WpfApp1
     /// </summary>
     public partial class Window1 : Window
     {
-        public Window1()
+        user obj;
+        public Window1(user obj)
         {
+            this.obj = obj;
+
             InitializeComponent();
         }
 
@@ -34,9 +37,26 @@ namespace WpfApp1
 
         private void enter(object sender, RoutedEventArgs e)
         {
-            userdashboard userdashboard = new userdashboard();
-            userdashboard.Show();
-            this.Close();
+            try
+            {
+
+
+                if (user.checkuser(user_name.Text, password.Password) == true)
+                {
+
+                    
+                    userdashboard userdashboard = new userdashboard(obj);
+                    userdashboard.Show();
+                    this.Close();
+                }
+                else
+                {
+                    throw new Exception("The information is wrong.you cant enter.");
+                }
+            }catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message) ;
+            }
         }
     }
 }

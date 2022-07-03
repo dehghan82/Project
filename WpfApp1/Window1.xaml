@@ -45,7 +45,8 @@
 
             <StackPanel Grid.Row="1">
                 <StackPanel Orientation="Horizontal">
-                    <TextBox FontFamily="Century Gothic"
+                    <TextBox Name="user_name"
+                        FontFamily="Century Gothic"
                              FontWeight="Light"
                              Text="username"
                              FontSize="20"
@@ -67,7 +68,8 @@
 
             
                 <StackPanel Orientation="Horizontal" Margin="0,30,0,0">
-                    <PasswordBox FontFamily="Century Gothic"
+                    <PasswordBox Name="password"
+                        FontFamily="Century Gothic"
                              FontWeight="Light"
                              Password="password"
                              FontSize="20"

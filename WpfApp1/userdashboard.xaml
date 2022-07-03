@@ -13,9 +13,9 @@
         AllowsTransparency="True"
         Height="500" Width="600">
 
-    <!--<Window.DataContext>
-        --><!--<viewmodel:MainViewModel/>--><!--
-    </Window.DataContext>-->
+    <Window.DataContext>
+        <viewmodel:MainViewModel/>
+    </Window.DataContext>
     <Border Background="AliceBlue"
             CornerRadius="20">
         <Grid>
@@ -45,7 +45,8 @@
                              Height="50"
                              Foreground="Black"
                              Style="{StaticResource MenuButtonTheme}"
-                             Command="{Binding ProfileViewCommand}"/>
+                             Command="{Binding ProfileViewCommand
+                    }"/>
             </StackPanel>
             <TextBox Width="250"
                      Height="40"

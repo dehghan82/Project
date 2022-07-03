@@ -19,8 +19,10 @@ namespace WpfApp1
     /// </summary>
     public partial class Window2 : Window
     {
-        public Window2()
-        {
+        admin admin;
+        public Window2(admin admin)
+        {   
+            this.admin = admin;
             InitializeComponent();
         }
 
@@ -29,6 +31,32 @@ namespace WpfApp1
             if (e.LeftButton == MouseButtonState.Pressed)
             {
                 DragMove();
+            }
+        }
+
+        private void enter_admin(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+
+
+                if (admin.checkadmin(user_name.Text, password.Password) == true)
+                {
+
+
+                    //userdashboard userdashboard = new userdashboard(obj);
+                   //admindashboard admindashboard=new admindashboard(admin)
+                   // admindashboard.Show();
+                    this.Close();
+                }
+                else
+                {
+                    throw new Exception("The information is wrong.you cant enter.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
     }

@@ -13,17 +13,17 @@
                 <ResourceDictionary Source="theme/MenuButtonTheme.xaml"/>
                 <ResourceDictionary Source="theme/TextboxTheme.xaml"/>
             </ResourceDictionary.MergedDictionaries>
-            <!--<DataTemplate DataType="{x:Type viewmodel:HomeViewModel}">
+            <DataTemplate DataType="{x:Type viewmodel:HomeViewModel}">
 
                 <view:HomeView/>
-            </DataTemplate>-->
+            </DataTemplate>
             
             
             
             
-            <!--<DataTemplate DataType="{x:Type viewmodel:Profileviewmodel}">
-                <View:profileviewer/>-->
-            <!--</DataTemplate>-->
+            <DataTemplate DataType="{x:Type viewmodel:Profileviewmodel}">
+                <view:profileviewer/>
+            </DataTemplate>
         </ResourceDictionary>
     </Application.Resources>
     

@@ -20,9 +20,18 @@ namespace WpfApp1.mvvm.view
     /// </summary>
     public partial class profileviewer : UserControl
     {
-        public profileviewer()
-        {
+        user obj;
+        public profileviewer(user obj)
+        {   this.obj = obj; 
             InitializeComponent();
+        }
+        public void meghdardehi()
+        {
+            name.Text = obj.name;
+            username.Text = obj.user_name;
+            phone.Text = obj.phone_number;
+            mojodi.Text = obj.mojodi.ToString();
+
         }
     }
 }

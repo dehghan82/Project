@@ -7,7 +7,7 @@ namespace WpfApp1
 {
     public class user
     {
-        public List<user> users = new List<user>();
+        public static  List<user> users = new List<user>();
         public string user_name { get; set; }
         public string password { get; set; }
         public string name { get; set; }
@@ -66,7 +66,35 @@ namespace WpfApp1
            // new
            // conn.Close();
         }
+        public static bool checkuser(string username,string pass)
+        {
+            int j = 0;
+            for(int i=0; i<users.Count; i++)
+            {
+                if(username == users[i].user_name)
+                {
+                    if (pass == users[i].password)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+                else
+                {
+                    j++;
+                }
 
+            }
+            if (j == users.Count)
+            {
+                return false;
+            }
+            else return true;
+        }
+        //public void checkusers(user obj)
 
 
 

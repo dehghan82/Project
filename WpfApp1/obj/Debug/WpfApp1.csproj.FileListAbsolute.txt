@@ -43,3 +43,4 @@ C:\Users\Lenovo\Desktop\WpfApp1\WpfApp1\obj\Debug\mvvm\view\HomeView.g.cs
 C:\Users\Lenovo\Desktop\WpfApp1\WpfApp1\obj\Debug\mvvm\view\profileviewer.g.cs
 C:\Users\Lenovo\Desktop\WpfApp1\WpfApp1\obj\Debug\mvvm\view\HomeView.baml
 C:\Users\Lenovo\Desktop\WpfApp1\WpfApp1\obj\Debug\mvvm\view\profileviewer.baml
+C:\Users\Lenovo\Desktop\WpfApp1\WpfApp1\obj\Debug\GeneratedInternalTypeHelper.g.cs

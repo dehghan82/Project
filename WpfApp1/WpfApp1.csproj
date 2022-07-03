@@ -220,5 +220,8 @@
     <Folder Include="images\" />
     <Folder Include="mvvm\model\" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="mvvm\view\white-removebg-preview.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

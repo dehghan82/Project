@@ -77,12 +77,13 @@ namespace WpfApp1
                 {
 
 
-                    admin admin = new admin(username.Text, pass.Password, name.Text, phone.Text);
+                     user cust = new user(username.Text, pass.Password, name.Text, phone.Text);
 
 
 
-                    Window2 window2 = new Window2();
-                    window2.Show();
+                    Window1 window1 = new Window1(cust);
+                    window1.Show();
+                   // user.checkusers(cust);
                     this.Close();
                 }
             }

@@ -85,7 +85,7 @@ namespace WpfApp1
 
 
                     admin admin = new admin(username.Text, pass.Password, name.Text, phone.Text);
-                    Window2 window2 = new Window2();
+                    Window2 window2 = new Window2(admin);
                     window2.Show();
                     this.Close();
                 }
