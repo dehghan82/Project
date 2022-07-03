@@ -31,6 +31,7 @@ namespace WpfApp1
 
         private void show_signup(object sender, RoutedEventArgs e)
         {
+           // user user = user.finduser();
             Window1 firstwindow = new Window1();
             firstwindow.Show();
             this.Close();

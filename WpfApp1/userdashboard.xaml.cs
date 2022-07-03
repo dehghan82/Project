@@ -19,10 +19,10 @@ namespace WpfApp1
     /// </summary>
     public partial class userdashboard : Window
     {
-        user cust;
-        public userdashboard(user obj)
+        
+        public userdashboard()
         { 
-            cust = obj;
+           
             InitializeComponent();
         }
     }

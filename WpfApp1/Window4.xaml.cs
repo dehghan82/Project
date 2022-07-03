@@ -81,7 +81,7 @@ namespace WpfApp1
 
 
 
-                    Window1 window1 = new Window1(cust);
+                    Window1 window1 = new Window1();
                     window1.Show();
                    // user.checkusers(cust);
                     this.Close();

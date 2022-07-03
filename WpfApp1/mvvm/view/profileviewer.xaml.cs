@@ -21,6 +21,7 @@ namespace WpfApp1.mvvm.view
     public partial class profileviewer : UserControl
     {
         user obj;
+
         public profileviewer(user obj)
         {   this.obj = obj; 
             InitializeComponent();

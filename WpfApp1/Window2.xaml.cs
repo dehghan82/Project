@@ -19,10 +19,10 @@ namespace WpfApp1
     /// </summary>
     public partial class Window2 : Window
     {
-        admin admin;
-        public Window2(admin admin)
+        
+        public Window2()
         {   
-            this.admin = admin;
+           
             InitializeComponent();
         }
 

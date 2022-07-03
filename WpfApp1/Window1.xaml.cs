@@ -19,10 +19,10 @@ namespace WpfApp1
     /// </summary>
     public partial class Window1 : Window
     {
-        user obj;
-        public Window1(user obj)
+        
+        public Window1()
         {
-            this.obj = obj;
+            
 
             InitializeComponent();
         }
@@ -45,7 +45,7 @@ namespace WpfApp1
                 {
 
                     
-                    userdashboard userdashboard = new userdashboard(obj);
+                    userdashboard userdashboard = new userdashboard();
                     userdashboard.Show();
                     this.Close();
                 }
