@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Lenovo\Desktop\WpfApp1\WpfApp1\obj\Debug\
+C:\Users\asus\Desktop\Project\WpfApp1\obj\Debug\
 WpfApp1
 none
 false
 DEBUG;TRACE
-C:\Users\Lenovo\Desktop\WpfApp1\WpfApp1\App.xaml
-13668040480
+C:\Users\asus\Desktop\Project\WpfApp1\App.xaml
+132049506872
 
-221688896773
-17-1444416119
-buttontheme.xaml;MainWindow.xaml;mvvm\view\HomeView.xaml;mvvm\view\profileviewer.xaml;theme\MenuButtonTheme.xaml;theme\TextboxTheme.xaml;userdashboard.xaml;Window1.xaml;Window2.xaml;Window3.xaml;Window4.xaml;Window5.xaml;Window6.xaml;
+22-1885010723
+17127749161
+AdminDashboard.xaml;buttontheme.xaml;MainWindow.xaml;mvvm\view\profileviewer.xaml;theme\MenuButtonTheme.xaml;theme\TextboxTheme.xaml;userdashboard.xaml;Window1.xaml;Window2.xaml;Window3.xaml;Window4.xaml;Window5.xaml;Window6.xaml;
 
-False
+True
 

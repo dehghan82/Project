@@ -12,17 +12,9 @@
         <Grid>
 
             <Grid.RowDefinitions>
-                <RowDefinition>
-
-
-                </RowDefinition>
-                <RowDefinition>
-
-
-                </RowDefinition>
-
+                <RowDefinition/>
+                <RowDefinition/>
             </Grid.RowDefinitions>
-
 
             <Border CornerRadius="10" Grid.RowSpan="2">
                 <Border.Background>

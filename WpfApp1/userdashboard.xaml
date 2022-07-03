@@ -12,10 +12,6 @@
         Background="Transparent"
         AllowsTransparency="True"
         Height="500" Width="600">
-
-    <Window.DataContext>
-        <viewmodel:MainViewModel/>
-    </Window.DataContext>
     <Border Background="AliceBlue"
             CornerRadius="20">
         <Grid>
